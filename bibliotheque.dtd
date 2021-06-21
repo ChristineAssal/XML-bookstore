@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Christine Maher Assal
+Matricule : 20127404
+IFT 3225 TP 1 - Été 2021
+Exercice 2 - Phase 1 : Schéma DTD -->
+
+<!ELEMENT bib:bibliotheque (liv:livres, aut:auteurs, bib:adresse)>
+<!ATTLIST bib:bibliotheque xmlns:bib CDATA #REQUIRED>
+<!ELEMENT bib:adresse (numero, rue, ville, cp)>
+
+<!ENTITY  % livres SYSTEM "livres.dtd">
+%livres;

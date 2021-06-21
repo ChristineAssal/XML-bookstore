@@ -1,0 +1,27 @@
+# Christine Maher Assal
+# Matricule : 20127404
+# IFT 3225 TP 1 - Été 2021
+# Exercice 2 - Phase 1 : Schéma RNC
+
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+default namespace = "http://www.iro.umontreal.ca/assal/bibliotheque"
+namespace liv = "http://www.iro.umontreal.ca/assal/livres"
+namespace aut = "http://www.iro.umontreal.ca/assal/auteurs"
+
+include "livres.rnc"
+{
+    start = bibliotheque 
+}
+
+bibliotheque = element bibliotheque
+{   
+    livres,
+    auteurs,
+    element adresse 
+    {
+        element numero {xsd:nonNegativeInteger},
+        element rue    {text},
+        element ville  {text},
+        element cp     {cpFormat}
+    }
+}

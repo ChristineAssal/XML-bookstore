@@ -1,0 +1,44 @@
+# Christine Maher Assal
+# Matricule : 20127404
+# IFT 3225 TP 1 - Été 2021
+# Exercice 2 - Phase 1 : Schéma RNC
+
+# Ressources utilisées : 
+# URL pattern : https://stackoverflow.com/questions/22324982/add-pattern-to-anyuri-data-type-in-xsd
+
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+default namespace = "http://www.iro.umontreal.ca/assal/livres"
+namespace aut = "http://www.iro.umontreal.ca/assal/auteurs"
+
+include "auteurs.rnc"
+{
+    start = livres  
+}
+
+livres = element livres
+{
+    livre+
+}
+
+livre = element livre
+{ 
+    attribute langue    {xsd:language},
+    attribute auteurs   {xsd:IDREFS},
+    (element titre      {xsd:string {maxLength = "60"}}&
+    element annee       {xsd:gYear}&
+    prix),
+    (element couverture {xsd:anyURI}?&
+    element commentaire {text}?)
+}
+
+prix = element prix 
+{
+    attribute devise    {("CAD" | "USD" | "EURO"| "ZAR"| "CHF" | "GBP")}?,
+    xsd:decimal 
+    {
+        minExclusive = "0"
+        maxInclusive = "100"
+     }
+}
+
+URLFormat = xsd:anyURI {pattern = "https?://.+"}

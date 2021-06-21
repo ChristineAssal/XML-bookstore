@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Christine Maher Assal
+Matricule : 20127404
+IFT 3225 TP 1 - Été 2021
+Exercice 2 - Phase 1 : Schéma DTD -->
+
+<!ELEMENT liv:livres (livre+)>
+<!ATTLIST liv:livres xmlns:liv CDATA #REQUIRED>
+
+<!ELEMENT livre (((titre, annee, prix)|(titre,prix,annee)|
+(annee,titre,prix)|(annee,prix,titre)|
+(prix,annee,titre)|(prix,titre,annee)),
+((couverture?, commentaire?)|(commentaire?, couverture?)))>
+
+<!ATTLIST livre langue CDATA #REQUIRED>
+<!ATTLIST livre auteurs IDREFS #REQUIRED>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT annee (#PCDATA)>
+<!ELEMENT prix (#PCDATA)>
+<!ATTLIST prix devise (CAD | USD | EURO| ZAR| CHF | GBP) #IMPLIED>
+<!ELEMENT couverture (#PCDATA) >
+
+<!ENTITY  % auteurs SYSTEM "auteurs.dtd">
+%auteurs;
+

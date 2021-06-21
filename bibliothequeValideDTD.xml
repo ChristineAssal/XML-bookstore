@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Christine Maher Assal
+Matricule : 20127404
+IFT 3225 TP 1 - Été 2021
+Ce document a été ajouté pour permettre de valider le XML avec le DTD inculant les espaces de nom-->
+<!DOCTYPE bib:bibliotheque SYSTEM "bibliotheque.dtd">
+<bib:bibliotheque xmlns:bib="http://www.iro.umontreal.ca/assal/bibliotheque">
+    <liv:livres xmlns:liv="http://www.iro.umontreal.ca/assal/livres">
+        <livre langue="Anglais" auteurs="a001">
+            <titre>Memoirs of a Geisha</titre>
+            <prix devise="USD">22.00</prix>
+            <annee>1997</annee>
+            <commentaire>A literary sensation and runaway bestseller, this brilliant debut novel presents 
+                with seamless authenticity and exquisite lyricism the true confessions of one of
+                Japan's most celebrated geisha.</commentaire>
+            <couverture>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1409595968l/929.jpg</couverture>
+        </livre>
+        <livre langue="Francais" auteurs="b002">
+            <prix devise="CAD">12.00</prix>
+            <annee>1862</annee>
+            <titre>Les misérables</titre>
+            <couverture>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1411852091l/24280.jpg</couverture>
+            <commentaire>Les Misérables est un roman de Victor Hugo publié en 1862. Il a donné lieu à de
+                nombreuses adaptations, au cinéma et sur de nombreux autres supports. Dans ce
+                roman emblématique de la littérature française qui décrit la vie de pauvres gens
+                dans Paris et la France provinciale du xixe siècle, l'auteur s'attache plus
+                particulièrement au destin du bagnard Jean Valjean.</commentaire>
+        </livre>
+        <livre langue="Anglais" auteurs="c003">
+            <prix devise="USD">10.00</prix>
+            <titre>Harry Potter and the Sorcerer's Stone</titre>
+            <annee>1998</annee>
+            <commentaire>Harry Potter's life is miserable. His parents are dead and he's stuck with his 
+                heartless relatives, who force him to live in a tiny closet under the stairs. But his
+                fortune changes when he receives a letter that tells him the truth about himself: he's
+                a wizard. A mysterious visitor rescues him from his relatives and takes him to his new 
+                home, Hogwarts School of Witchcraft and Wizardry.</commentaire>
+            <couverture>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1474154022l/3._SY475_.jpg</couverture>
+        </livre>
+        <livre langue="Anglais" auteurs="c003">
+            <annee>2003</annee>
+            <titre>Harry Potter and the Order of the Phoenix</titre>
+            <prix>20.00</prix>
+            <couverture>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546910265l/2.jpg</couverture>
+        </livre>
+        <livre langue="Anglais" auteurs="d004">
+            <titre>The Alchemist</titre>
+            <annee>1988</annee>
+            <prix>14.50</prix>
+            <couverture>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1466865542l/18144590._SY475_.jpg</couverture>
+            <commentaire>Paulo Coelho's enchanting novel has inspired a devoted following around the
+                world. This story, dazzling in its powerful simplicity and soul-stirring wisdom, is 
+                about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain 
+                to the Egyptian desert in search of a treasure buried near the Pyramids.</commentaire>
+        </livre>
+        <livre langue="Anglais" auteurs="e005">
+            <titre>The Color Purple</titre>
+            <annee>1982</annee>
+            <prix devise="GBP">17.00</prix>
+            <couverture>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1572261616l/52892857._SX318_SY475_.jpg</couverture>
+            <commentaire>A powerful cultural touchstone of modern American literature, The Color Purple
+                depicts the lives of African American women in early twentieth-century rural Georgia. 
+                Separated as girls, sisters Celie and Nettie sustain their loyalty to and hope in each
+                other across time, distance and silence.</commentaire>
+        </livre>
+        <livre langue="Francais" auteurs="b002">
+            <titre>L'Homme qui rit</titre>
+            <annee>1869</annee>
+            <prix devise="EURO">17.50</prix>
+            <commentaire>L'Homme qui rit est un roman philosophique de Victor Hugo publié en avril 1869 dont l’action se 
+                déroule dans l’Angleterre de la fin du xviie et du début du xviiie siècle. Il est notamment célèbre pour
+                la figure mutilée dans un rire permanent de son héros qui a fortement inspiré le monde littéraire et 
+                cinématographique.</commentaire>
+        </livre>
+        <livre langue="Anglais" auteurs="c003">
+            <titre>Harry Potter and the Deathly Hallows</titre>
+            <annee>2007</annee>
+            <prix devise="USD">17.00</prix>
+        </livre>
+        <livre langue="Anglais" auteurs="c003">
+            <titre>Harry Potter and the Chamber of Secrets</titre>
+            <annee>2002</annee>
+            <prix>11.00</prix>
+            <commentaire>Harry Potter's summer has included the worst birthday ever, doomy warnings from a house-elf called 
+                Dobby, and rescue from the Dursleys by his friend Ron Weasley in a magical flying car! Back at Hogwarts School
+                of Witchcraft and Wizardry for his second year, Harry hears strange whispers echo through empty corridors  
+                and then the attacks start.</commentaire>
+        </livre>
+        <livre langue="Anglais" auteurs="f006 g007">
+            <titre>Tiny Pretty Things</titre>
+            <annee>2006</annee>
+            <prix devise="USD">15.00</prix>
+            <couverture>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1413576484l/18710209.jpg</couverture>
+        </livre>
+    </liv:livres>
+    <aut:auteurs xmlns:aut="http://www.iro.umontreal.ca/assal/auteurs">
+        <auteur ident="d004">
+            <prenom>Paulo</prenom>
+            <nom>Coelho</nom>
+            <adresse>
+                <numero>1212</numero>
+                <rue>Côte-des-Neiges</rue>
+                <ville>Montréal</ville>
+                <cp>H4A 3J6</cp>
+            </adresse>
+            <commentaire>Coelho wrote The Alchemist and published it through a small Brazilian publishing
+                house that made an initial print run of 900 copies and decided not to reprint it.
+                He subsequently found a bigger publishing house, and with the publication of his next book 
+                Brida, The Alchemist took off. HarperCollins decided to publish the book in 1994. Later it
+                became an international bestseller.</commentaire>
+            <email>Paulo@gmail.com</email>
+        </auteur>
+        <auteur ident="a001">
+            <nom>Golden</nom>
+            <prenom>Arthur</prenom>
+            <adresse>
+                <numero>400</numero>
+                <rue>Boulevard Saint-Martin</rue>
+                <ville>Laval</ville>
+                <cp>H7M 3Y8</cp>
+            </adresse>
+            <commentaire>Arthur Sulzberger Golden (born December 6, 1956) is an American writer.
+                He is the author of the bestselling novel Memoirs of a Geisha (1997). Golden's most 
+                well-known novel, Memoirs of a Geisha, was written over a 6-year period; following 
+                the life of fictional Gion geisha Sayuri, the novel was re-written in its entirety 
+                three times during its development, with each re-write seeing the novel's point of
+                view changing, before Golden eventually settled on Sayuri's perspective.</commentaire>
+            <email>Golden_Arturito@hotmail.com</email>
+        </auteur>
+        <auteur ident="e005">
+            <prenom>Alice</prenom>
+            <nom>Walker</nom>
+            <adresse>
+                <numero>400</numero>
+                <rue>100e Avenue</rue>
+                <ville>Laval</ville>
+                <cp>H7X 2A8</cp>
+            </adresse>
+            <email>Walking.Alice@outlook.com</email>
+        </auteur>
+        <auteur ident="b002">
+            <prenom>Victor</prenom>
+            <nom>Hugo</nom>
+            <adresse>
+                <numero>2611</numero>
+                <rue>Rue Adonis</rue>
+                <ville>Terrebonne</ville>
+                <cp>J7M 2B1</cp>
+            </adresse>
+            <commentaire>Victor Hugo est un poète, dramaturge, écrivain, romancier et dessinateur romantique
+                français, né le 7 ventôse an X (26 février 1802) à Besançon et mort le 22 mai 1885 à Paris.
+                Il est considéré comme l'un des plus importants écrivains de la langue française.</commentaire>
+            <email>Hugo_Vic@gmail.com</email>
+        </auteur>
+        <auteur ident="c003">
+            <prenom>Joanne</prenom>
+            <nom>Rowling</nom>
+            <adresse>
+                <numero>911</numero>
+                <rue>Sainte Catherine</rue>
+                <ville>Montréal</ville>
+                <cp>H2L 4Y5</cp>
+            </adresse>
+            <email>JK_rowling@live.ca</email>
+        </auteur>
+        <auteur ident="f006">
+            <nom>Charaipotra</nom>
+            <prenom>Sona</prenom>
+            <adresse>
+                <numero>1234</numero>
+                <rue>Mont Royal</rue>
+                <ville>Montréal</ville>
+                <cp>H2L 9Z2</cp>
+            </adresse>
+            <email>Sona.Chara@yahoo.com</email>
+        </auteur>
+        <auteur ident="g007">
+            <prenom>Dhonielle</prenom>
+            <nom>Clayton</nom>
+            <adresse>
+                <numero>8723</numero>
+                <rue>Pierre-de Coubertin</rue>
+                <ville>Montréal</ville>
+                <cp>H1X 0A8</cp>
+            </adresse>
+            <email>Dhonielle_Clay@hotmail.com</email>
+        </auteur>
+    </aut:auteurs>
+    <bib:adresse>
+        <numero>1234</numero>
+        <rue>De la Montagne</rue>
+        <ville>Montreal</ville>
+        <cp>H1X 1X1</cp>
+    </bib:adresse>
+</bib:bibliotheque>

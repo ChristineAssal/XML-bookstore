@@ -1,0 +1,40 @@
+# Christine Maher Assal
+# Matricule : 20127404
+# IFT 3225 TP 1 - Été 2021
+# Exercice 2 - Phase 1 : Schéma RNC
+  
+# Ressources utilisées : 
+# Email pattern : https://github.com/metashare/META-SHARE/issues/527
+
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+default namespace = "http://www.iro.umontreal.ca/assal/auteurs"
+
+start = auteurs
+  
+
+auteurs = element auteurs
+{
+    auteur+
+}
+
+auteur = element auteur
+{
+    (element nom         {text}&
+    element prenom       {text}),
+    adresse,
+    element commentaire  {text}?,
+    element email        {emailFormat},
+    attribute ident      {xsd:ID}
+}
+
+adresse = element adresse 
+{
+    element numero       {xsd:positiveInteger},
+    element rue          {text},
+    element ville        {text},
+    element cp           {cpFormat}
+}
+
+emailFormat = xsd:string {pattern="[_\-a-zA-Z0-9\.\+]+@[a-zA-Z0-9](\.?[\-a-zA-Z0-9]*[a-zA-Z0-9])*"}
+
+cpFormat = xsd:string    {pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]"}
