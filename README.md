@@ -1,6 +1,6 @@
 # XML-bookstore
 ##### Phase 1 
-Création de schémas Relax NG compact(RNC) et DTD pour la base de données, les livres et les auteurs.
+Création de schémas Relax NG compact (RNC) et DTD pour la base de données, les livres et les auteurs.
 ##### Phase 2 
 Création d'un document XML validé par les schémas créées à la phase 1.
 ##### Phase 3 
